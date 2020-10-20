@@ -1,8 +1,10 @@
-# Welcome to your CDK TypeScript project!
+# GitHub Actions runner on AWS ECS
 
-This is a blank project for TypeScript development with CDK.
+This repository contains an example how to run self-hosted GitHub Actions runners on AWS ECS.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Docker image
+
+This sample uses 
 
 ## Useful commands
 
