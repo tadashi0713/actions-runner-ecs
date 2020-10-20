@@ -28,7 +28,7 @@ export class ActionsRunnerEcsStack extends cdk.Stack {
     const taskRole = new iam.Role(this, 'ActionsRunnerEcs', {
       assumedBy: new iam.ServicePrincipal('ecs-tasks.amazonaws.com'),
       managedPolicies: [
-        iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonEC2ContainerServiceTaskRole'),
+        iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonEC2ContainerServiceFullAccess'),
         iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonEC2ContainerRegistryPowerUser')
       ],
     })
